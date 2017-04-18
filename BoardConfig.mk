@@ -20,4 +20,4 @@ DEVICE_PATH := device/xiaomi/vince
 include $(DEVICE_PATH)/board/*.mk
 
 # Inherit the proprietary files
--include vendor/xiaomi/vince/BoardConfigVendor.mk
+include vendor/xiaomi/vince/BoardConfigVendor.mk
