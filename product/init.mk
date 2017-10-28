@@ -9,5 +9,4 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.post_boot.sh \
-    init.qcom.bt.sh
+    init.qcom.post_boot.sh

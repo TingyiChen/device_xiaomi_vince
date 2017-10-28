@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 # Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -150,7 +150,7 @@ case "$usb_config" in
 	              "msm8952" | "msm8953")
 		          setprop persist.sys.usb.config mtp,adb
 		      ;;
-	              "msm8998")
+	              "msmcobalt")
 		          setprop persist.sys.usb.config diag,serial_cdev,rmnet_gsi,adb
 		      ;;
 	              *)
@@ -171,16 +171,10 @@ esac
 case "$target" in
     "msm8996")
         setprop sys.usb.controller "6a00000.dwc3"
-        setprop sys.usb.rndis.func.name "rndis_bam"
 	;;
-    "msm8998")
+    "msmcobalt")
         setprop sys.usb.controller "a800000.dwc3"
-        setprop sys.usb.rndis.func.name "gsi"
 	;;
-    "msmfalcon")
-        setprop sys.usb.controller "a800000.dwc3"
-        setprop sys.usb.rndis.func.name "rndis_bam"
-        ;;
     *)
 	;;
 esac
