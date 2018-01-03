@@ -1003,7 +1003,7 @@ vendor/lib/libsmemlog.so
 -app/shutdownlistener/shutdownlistener.apk
 -framework/embmslibrary.jar
 -framework/qcrilhook.jar
--framework/qti-telephony-common.jar
+-framework/qti-telephony-common.jar|b3665b3cec1562bf2fb98dc94f86458cb89feab8
 -framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 bin/netmgrd
