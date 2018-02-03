@@ -106,7 +106,7 @@ etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 
 # CNE - from vince
--priv-app/CNEService/CNEService.apk
+-priv-app/CNEService/CNEService.apk|92cd1445e0c335423990d4d42baf76fb7cdb58e2
 bin/cnd
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
@@ -128,9 +128,9 @@ etc/cne/wqeclient/VZW/VZW_profile6.xml
 etc/permissions/ConnectivityExt.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
-framework/ConnectivityExt.jar
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
+framework/ConnectivityExt.jar|21fe529f3eb333175b457df14db7c8aa3e7ab5b7
+framework/cneapiclient.jar|3cb56a579341acfb16d2be2e41bac2c7b6ac34b4
+framework/com.quicinc.cne.jar|199235f6de3073a96d5a086ee97bf37c41b15734
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneqmiutils.so
@@ -691,9 +691,9 @@ etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
+framework/com.qti.dpmframework.jar|8f4dab02bc8ec014d4ff77d1f919c0ef497e0ea7
+framework/dpmapi.jar|0015235ff71d52d1b340b10ce4fa737fa26975ef
+framework/tcmclient.jar|e7149c664f4b1841139ab816c0d4e0942df0583c
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
 vendor/lib/libdpmframework.so
@@ -746,12 +746,12 @@ vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/gatekeeper.msm8953.so
 
 # GPS - from vince
--framework/com.qti.location.sdk.jar
--framework/com.qualcomm.location.vzw_library.jar
+-framework/com.qti.location.sdk.jar|3d79ffde5265b87c8ae58e6b2bac254d94bf01ae
+-framework/com.qualcomm.location.vzw_library.jar|8f6fddf9981e2fa54f725e4084dbb24080fa0ba5
 -framework/izat.xt.srv.jar
 -lib64/libloc_api_v02.so
 -lib64/libloc_ds_api.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk|8f9f92490155b1fbacd50a2eed769cfaf8206b55
 bin/loc_launcher
 bin/lowi-server
 bin/xtwifi-client
@@ -925,7 +925,7 @@ vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
 # Network - from vince
--priv-app/QtiTetherService/QtiTetherService.apk
+-priv-app/QtiTetherService/QtiTetherService.apk|779bc6aff05efafef3f49cdfdb5626a76a889073
 vendor/lib/libconnctrl.so
 vendor/lib/libQtiTether.so
 vendor/lib64/libconnctrl.so
@@ -947,7 +947,7 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing - from vince
-framework/com.qti.snapdragon.sdk.display.jar
+framework/com.qti.snapdragon.sdk.display.jar|e6387246d96376fd832fdcf14b65e149b6333bb2
 vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
@@ -997,15 +997,15 @@ vendor/lib/libquipc_os_api.so
 vendor/lib/libsmemlog.so
 
 # Radio - from vince
--app/datastatusnotification/datastatusnotification.apk
--app/fastdormancy/fastdormancy.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/shutdownlistener/shutdownlistener.apk
--framework/embmslibrary.jar
--framework/qcrilhook.jar
+-app/datastatusnotification/datastatusnotification.apk|ad43ab7c46d16da830e899fc6f0cc861df4cc5c6
+-app/fastdormancy/fastdormancy.apk|a62395336ef6a2020abf4b9d90bada83bec4aac0
+-app/QtiTelephonyService/QtiTelephonyService.apk|9319c50d411dc5dc540ca1fe1c222c777101734d
+-app/shutdownlistener/shutdownlistener.apk|a0f71ddb85660d0cf4cf500cdfafd8df640c53a1
+-framework/embmslibrary.jar|a06799495515305de3e5d432ec62a1f692200c99
+-framework/qcrilhook.jar|28a30175fa70611865df454d3fc37357da921b58
 -framework/qti-telephony-common.jar|b3665b3cec1562bf2fb98dc94f86458cb89feab8
--framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-framework/QtiTelephonyServicelibrary.jar|0a482ec5deb30b4673ed5b07f5713d40c920fb9e
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|37af17f2fdc06c5b79163983b4bcfbbbd488acca
 bin/netmgrd
 bin/radish
 bin/rmt_storage
@@ -1031,10 +1031,9 @@ vendor/lib/libmdmdetect.so
 vendor/qcril.db
 
 # Radio - IMS - from vince
--framework/imscmlibrary.jar
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
--vendor/framework/qti-vzw-ims-internal.jar
+-framework/imscmlibrary.jar|0c24d6540c06efede52169c1445272f43748180f
+-vendor/app/ims/ims.apk|8e9cb6757a9d2daa030c903ce91777b32166ef28
+-vendor/app/imssettings/imssettings.apk|2f089765b736cac63b131bde0799d61fe00c18eb
 bin/ims_rtp_daemon
 bin/imscmservice
 bin/imsdatadaemon
@@ -1088,7 +1087,7 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Time services - from vince
--app/TimeService/TimeService.apk
+-app/TimeService/TimeService.apk|114ec530017839eee287e8cc80a8d5ae94fd3280
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
