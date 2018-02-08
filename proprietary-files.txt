@@ -572,6 +572,7 @@ vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_hfr_90.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_liveshot.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_preview.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_snapshot.so
+vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_snapshot_hht.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_video.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_default_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_default_video.so
@@ -588,7 +589,6 @@ vendor/lib/libchromatix_vince_ov5675_ofilm_preview.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_snapshot.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_zsl_video_3a.so
-vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_snapshot_hht.so
 
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_common.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_hfr_120.so
@@ -597,6 +597,7 @@ vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_hfr_90.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_liveshot.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_preview.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_snapshot.so
+vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_snapshot_hht.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_video.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_default_preview_3a.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_default_video.so
@@ -623,6 +624,7 @@ vendor/lib/libchromatix_vince_ov5675_qtech_cpp_hfr_90.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_liveshot.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_preview.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_snapshot.so
+vendor/lib/libchromatix_vince_ov5675_qtech_cpp_snapshot_hht.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_video.so
 vendor/lib/libchromatix_vince_ov5675_qtech_default_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_qtech_default_video.so
@@ -639,7 +641,6 @@ vendor/lib/libchromatix_vince_ov5675_qtech_preview.so
 vendor/lib/libchromatix_vince_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_video_3a.so
-vendor/lib/libchromatix_vince_ov5675_qtech_cpp_snapshot_hht.so
 
 vendor/lib/libchromatix_vince_india_ov5675_qtech_common.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_hfr_120.so
@@ -648,6 +649,7 @@ vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_hfr_90.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_liveshot.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_preview.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_snapshot.so
+vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_snapshot_hht.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_video.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_default_preview_3a.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_default_video.so
