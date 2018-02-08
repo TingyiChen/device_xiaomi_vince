@@ -732,6 +732,7 @@ vendor/lib64/libtzdrmgenprov.so
 # Display calibration - from vince
 -etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml
 -etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml
+-etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml
 -etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml
 
 # Fingerprint - from vince
