@@ -171,7 +171,6 @@ lib/libmorphohht4.0.so
 lib/libqomx_core.so
 vendor/lib/lib_lowlight.so
 vendor/lib/libFaceGrade.so
-vendor/lib/libFaceProc.so
 vendor/lib/libarcsoft_beautyshot_image_algorithm.so
 vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libarcsoft_beautyshot.so
@@ -187,7 +186,6 @@ vendor/lib/libmorpho_easy_hdr.so
 vendor/lib/libmorpho_hdr_checker.so
 vendor/lib/libmorpho_panorama_gp.so
 vendor/lib/libmpbase.so
-vendor/lib/libRecoFace.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/liboptizoom.so
 vendor/lib/libubifocus.so
