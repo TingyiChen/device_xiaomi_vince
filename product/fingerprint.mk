@@ -1,5 +1,6 @@
 # Fingerprint
 PRODUCT_PACKAGES += \
+    fingerprint.msm8953 \
     fingerprintd
 
 # Permissions
