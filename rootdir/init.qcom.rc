@@ -605,18 +605,11 @@ service fingerprintd /system/bin/fingerprintd
     system system
     writepid /dev/cpuset/system-background/tasks
 
-on property:ro.boot.fingerprint=FPC
-    setprop persist.sys.fp.goodix 0
-    setprop ro.hardware.fingerprint fpc
-
-on property:ro.boot.fingerprint=goodix
-    setprop persist.sys.fp.goodix 1
-    setprop ro.hardware.fingerprint goodix
-
 service gx_fpd /system/bin/goodixfingerprintd
     class late_start
     user system
-    group system
+    group system sdcard_rw
+    seclabel u:r:gx_fpd:s0
     disabled
     writepid /dev/cpuset/system-background/tasks
 
