@@ -883,10 +883,6 @@ etc/firmware/a540_gpmu.fw2
 vendor/lib/hw/keystore.msm8953.so
 vendor/lib64/hw/keystore.msm8953.so
 
-# Lights - from vince
-lib/hw/lights.msm8953.so
-lib64/hw/lights.msm8953.so
-
 # Listen - from vince
 vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
