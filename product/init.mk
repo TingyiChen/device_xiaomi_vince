@@ -1,16 +1,9 @@
 # Init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.class_core.sh \
-    init.qcom.ssr.sh \
-    init.qcom.sensors.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.syspart_fixup.sh \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.qcom.power.rc \
     init.qcom.usb.sh \
-    init.qcom.factory.rc \
     init.target.rc \
     ueventd.qcom.rc
 
