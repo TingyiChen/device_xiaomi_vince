@@ -144,7 +144,12 @@ vendor/lib64/libvendorconn.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 
+# AOSP Camera Libraries - from vince (HACK NEEDED)
+lib/libcamera_client.so|3781f99890f2308595916d4e3b666071935a8e4d
+lib/libcameraservice.so|113e56b0673d59b65ae8fceb47d378f2a6594380
+
 # Camera XML Configs - from vince
+etc/morpho_lowlight4.0.xml
 etc/camera/camera_config.xml
 etc/camera/vince_imx486_ofilm_chromatix.xml
 etc/camera/vince_imx486_ofilm_chromatix_india.xml
