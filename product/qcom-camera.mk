@@ -1,6 +1,6 @@
 # Snap
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
