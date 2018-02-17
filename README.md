@@ -1,5 +1,4 @@
-
-This repository contains device configuration for Xiaomi Redmi 5 Plus (vince)
+This repository contains device configuration for Xiaomi Redmi 5 Plus/Redmi Note 5 (vince)
 
 Basic   | Spec Sheet
 -------:|:----------
