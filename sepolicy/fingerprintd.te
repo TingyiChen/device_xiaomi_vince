@@ -1,5 +1,5 @@
-allow fingerprintd gx_fpd:binder { transfer call };
-allow fingerprintd gx_fpd_service:service_manager find;
+allow fingerprintd goodixfpd:binder { transfer call };
+allow fingerprintd goodixfpd_service:service_manager find;
 allow fingerprintd fingerprint_service:service_manager find;
 allow fingerprintd fpc_sysfs:file rw_file_perms;
 allow fingerprintd fpc_sysfs:dir rw_dir_perms;
@@ -7,5 +7,6 @@ allow fingerprintd tee_device:chr_file rw_file_perms;
 allow fingerprintd uhid_device:chr_file rw_file_perms;
 allow fingerprintd fpc_data_file:dir rw_dir_perms;
 allow fingerprintd fpc_data_file:sock_file create_file_perms;
+allow fingerprintd storage_file:dir search;
 set_prop(fingerprintd, system_prop)
 r_dir_file(fingerprintd, firmware_file)

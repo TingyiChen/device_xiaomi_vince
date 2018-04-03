@@ -1,0 +1,1 @@
+allow system_server radio_prop:property_service set;
