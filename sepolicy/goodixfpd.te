@@ -1,0 +1,52 @@
+type goodixfpd, domain;
+type goodixfpd_exec, exec_type, file_type;
+
+# goodixfpd
+init_daemon_domain(goodixfpd)
+binder_use(goodixfpd)
+
+# need to find KeyStore and add self
+allow goodixfpd fingerprintd_service:service_manager { add find };
+
+# allow HAL module to read dir contents
+allow goodixfpd goodixfpd_data_file:file create_file_perms;
+
+# allow HAL module to read/write/unlink contents of this dir
+allow goodixfpd goodixfpd_data_file:dir create_dir_perms;
+
+# Need to add auth tokens to KeyStore
+use_keystore(goodixfpd)
+allow goodixfpd keystore:keystore_key { add_auth };
+
+# For permissions checking
+binder_call(goodixfpd, system_server);
+allow goodixfpd permission_service:service_manager find;
+
+#Allow access to goodix device
+allow goodixfpd goodixfpd_device:chr_file rw_file_perms;
+
+#Allow access to tee device
+allow goodixfpd tee_device:chr_file rw_file_perms;
+
+# Allow access to ion device
+allow goodixfpd ion_device:chr_file rw_file_perms;
+
+#allow create socket
+allow goodixfpd self:socket create_socket_perms;
+allow goodixfpd self:{ netlink_socket netlink_generic_socket } create_socket_perms;
+
+#allow read/write property
+set_prop(goodixfpd, system_prop)
+
+allow goodixfpd goodixfpd_service:service_manager { add find };
+
+allow goodixfpd fingerprintd:binder { transfer call };
+allow goodixfpd fuse:dir search;
+allow goodixfpd fuse:file { getattr open append };
+allow goodixfpd self:capability dac_override;
+allow goodixfpd storage_file:dir search;
+allow goodixfpd storage_file:lnk_file read;
+r_dir_file(goodixfpd, firmware_file)
+allow goodixfpd tmpfs:dir search;
+allow goodixfpd mnt_user_file:lnk_file read;
+allow goodixfpd mnt_user_file:dir search;
