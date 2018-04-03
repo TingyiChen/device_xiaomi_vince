@@ -609,7 +609,6 @@ service gx_fpd /system/bin/goodixfingerprintd
     class late_start
     user system
     group system sdcard_rw
-    seclabel u:r:gx_fpd:s0
     disabled
     writepid /dev/cpuset/system-background/tasks
 
