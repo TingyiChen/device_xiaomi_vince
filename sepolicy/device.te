@@ -1,2 +1,2 @@
-type lirc_device, dev_type;
-type gx_fpd_device, dev_type;
+type goodixfpd_device, dev_type;
+type peelir_device, dev_type;
