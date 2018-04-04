@@ -79,10 +79,8 @@ static bool ensure_vendor_module_is_loaded(void)
         property_get("ro.boot.fingerprint", vend, NULL);
 
         if (!strcmp(vend, "fpc")) {
-            property_set("persist.sys.fp.goodix", "0");
             rv = load("/system/lib64/hw/fingerprint.fpc.so", &vendor.hw_module);
         } else {
-            property_set("persist.sys.fp.goodix", "1");
             rv = load("/system/lib64/hw/fingerprint.goodix.so", &vendor.hw_module);
         }
         if (rv) {

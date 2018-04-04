@@ -271,3 +271,6 @@
 
 # IR Node
 /dev/peel_ir		  0660	 system	    system
+
+# TD4310 DT2W
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture	0660	system	system

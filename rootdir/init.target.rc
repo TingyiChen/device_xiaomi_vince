@@ -208,12 +208,6 @@ on property:init.svc.per_mgr=running
 on property:sys.shutdown.requested=*
     stop per_proxy
 
-service energy-awareness /system/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
-
 on boot
 	write /dev/cpuset/top-app/cpus 0-7
 	write /dev/cpuset/top-app/boost/cpus 4-7
@@ -230,6 +224,3 @@ on boot
 	chown system system /dev/cpuset/camera-daemon
 	chown system system /dev/cpuset/camera-daemon/tasks
 	chmod 0664 /dev/cpuset/camera-daemon/tasks
-
-	# Synaptics DSX RMI Node
-	chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture

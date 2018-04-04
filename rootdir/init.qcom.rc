@@ -612,10 +612,10 @@ service gx_fpd /system/bin/goodixfingerprintd
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-on property:persist.sys.fp.goodix=0
+on property:ro.boot.fingerprint=fpc
     stop gx_fpd
 
-on property:persist.sys.fp.goodix=1
+on property:ro.boot.fingerprint=goodix
     start gx_fpd
 
 on charger
