@@ -25,4 +25,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := lights.cpp
 LOCAL_SHARED_LIBRARIES := liblog libcutils
 
+LOCAL_PROPRIETARY_MODULE := true
+
 include $(BUILD_SHARED_LIBRARY)
