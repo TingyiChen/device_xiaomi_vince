@@ -2,13 +2,13 @@
 PRODUCT_PACKAGES += \
     gps.msm8953 \
     libcurl \
-    libgnss \
-    libgnsspps
+    libgnss
 
 PRODUCT_BOOT_JARS += \
     com.qti.location.sdk
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/etc/apdr.conf:system/etc/apdr.conf \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
     $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
