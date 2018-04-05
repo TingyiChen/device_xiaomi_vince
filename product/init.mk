@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
+    init.vince.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
