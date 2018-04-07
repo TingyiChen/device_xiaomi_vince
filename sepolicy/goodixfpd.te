@@ -50,3 +50,7 @@ r_dir_file(goodixfpd, firmware_file)
 allow goodixfpd tmpfs:dir search;
 allow goodixfpd mnt_user_file:lnk_file read;
 allow goodixfpd mnt_user_file:dir search;
+allow goodixfpd goodixfpd_data_file:file { read write getattr open};
+
+allow goodixfpd power_service:service_manager find;
+allow goodixfpd fingerprint_service:service_manager find;
