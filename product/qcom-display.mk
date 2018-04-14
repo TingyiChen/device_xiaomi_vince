@@ -4,6 +4,9 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     libtinyxml \
+    libdisplayconfig \
+    libqdMetaData.system \
+    libgenlock \
     memtrack.msm8953
 
 # Properties

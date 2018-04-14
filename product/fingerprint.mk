@@ -1,7 +1,6 @@
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprint.msm8953 \
-    fingerprintd
+    fingerprint.msm8953
 
 # Permissions
 PRODUCT_COPY_FILES += \
