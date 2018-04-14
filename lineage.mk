@@ -35,8 +35,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := vince
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=xiaomi/vince/vince:7.1.2/N2G47H/V9.2.3.0.NEGCNEK:user/release-keys \
     PRIVATE_BUILD_DESC="vince-user 7.1.2 N2G47H V9.2.3.0.NEGCNEK release-keys"
+
+BUILD_FINGERPRINT := xiaomi/vince/vince:7.1.2/N2G47H/V9.2.3.0.NEGCNEK:user/release-keys
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
