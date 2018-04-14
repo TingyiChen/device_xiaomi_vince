@@ -79,9 +79,9 @@ static bool ensure_vendor_module_is_loaded(void)
         property_get("ro.boot.fingerprint", vend, NULL);
 
         if (!strcmp(vend, "fpc")) {
-            rv = load("/system/lib64/hw/fingerprint.fpc.so", &vendor.hw_module);
+            rv = load("/system/vendor/lib64/hw/fingerprint.fpc.so", &vendor.hw_module);
         } else {
-            rv = load("/system/lib64/hw/fingerprint.goodix.so", &vendor.hw_module);
+            rv = load("/system/vendor/lib64/hw/fingerprint.goodix.so", &vendor.hw_module);
         }
         if (rv) {
             ALOGE("failed to open vendor module, error %d", rv);

@@ -4,9 +4,6 @@ PRODUCT_PACKAGES += \
     libcurl \
     libgnss
 
-PRODUCT_BOOT_JARS += \
-    com.qti.location.sdk
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
