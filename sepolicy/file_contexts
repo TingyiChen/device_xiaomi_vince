@@ -14,7 +14,7 @@
 /dev/gf66xx-spi                                 u:object_r:goodixfpd_device:s0
 /dev/ttyACM[0-9]*                               u:object_r:goodixfpd_device:s0
 /dev/goodix_fp*                                 u:object_r:goodixfpd_device:s0
-/system/bin/goodixfingerprintd                  u:object_r:goodixfpd_exec:s0
+/system/vendor/bin/goodixfingerprintd                  u:object_r:goodixfpd_exec:s0
 
 # Goodix Fingerprint data
 /data/gf_data(/.*)                              u:object_r:goodixfpd_data_file:s0

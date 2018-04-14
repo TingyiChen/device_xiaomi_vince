@@ -1,97 +1,67 @@
-# Audio HAL - from vince
-lib/hw/audio.primary.msm8953.so
-lib64/hw/audio.primary.msm8953.so
-
 # Audio ACDB - from vince
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/MTP_General_cal.acdb
-etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/MTP/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb
-etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-etc/acdbdata/QRD/QRD_General_cal.acdb
-etc/acdbdata/QRD/QRD_Global_cal.acdb
-etc/acdbdata/QRD/QRD_Handset_cal.acdb
-etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-etc/acdbdata/QRD/QRD_Headset_cal.acdb
-etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-etc/acdbdata/QRD/QRD_adsp_avs_config.acdb
-etc/acdbdata/QRD/QRD_workspaceFile.qwsp
-etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# AOSP Camera Libraries - from vince (HACK NEEDED)
-lib/libcamera_client.so|3781f99890f2308595916d4e3b666071935a8e4d
-lib/libcameraservice.so|113e56b0673d59b65ae8fceb47d378f2a6594380
- 
 # Camera XML Configs - from vince
-etc/morpho_lowlight4.0.xml
-etc/camera/camera_config.xml
-etc/camera/vince_imx486_ofilm_chromatix.xml
-etc/camera/vince_imx486_ofilm_chromatix_india.xml
-etc/camera/vince_ov12a10_sunny_chromatix.xml
-etc/camera/vince_ov12a10_sunny_chromatix_india.xml
-etc/camera/vince_ov5675_ofilm_chromatix.xml
-etc/camera/vince_ov5675_ofilm_chromatix_india.xml
-etc/camera/vince_ov5675_qtech_chromatix.xml
-etc/camera/vince_ov5675_qtech_chromatix_india.xml
- 
+vendor/etc/camera/camera_config.xml
+vendor/etc/camera/vince_imx486_ofilm_chromatix.xml
+vendor/etc/camera/vince_imx486_ofilm_chromatix_india.xml
+vendor/etc/camera/vince_ov12a10_sunny_chromatix.xml
+vendor/etc/camera/vince_ov12a10_sunny_chromatix_india.xml
+vendor/etc/camera/vince_ov5675_ofilm_chromatix.xml
+vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml
+vendor/etc/camera/vince_ov5675_qtech_chromatix.xml
+vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml
+
 # QCOM Camera Daemon - from vince
-bin/mm-qcamera-daemon
- 
+vendor/bin/mm-qcamera-daemon
+
 # QCOM Camera Libraries - from vince
-lib/hw/camera.msm8953.so
--lib/libMiCameraHal.so
-lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmorpho_memory_allocator.so
-lib/libmorpho_panorama.so
-lib/libmorphohht4.0.so
-lib/libqomx_core.so
-vendor/lib/lib_lowlight.so
-vendor/lib/libFaceGrade.so
-vendor/lib/libarcsoft_beautyshot_image_algorithm.so
-vendor/lib/libarcsoft_beauty_shot.so
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_beautyshot_video_algorithm.so
-vendor/lib/libarcsoft_dualcam_refocus.so
-vendor/lib/libcaffe.so
+vendor/lib/hw/camera.msm8953.so
+lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libllvd_smore.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmm-qcamera.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
-vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libmorpho_easy_hdr.so
-vendor/lib/libmorpho_hdr_checker.so
-vendor/lib/libmorpho_panorama_gp.so
-vendor/lib/libmpbase.so
-vendor/lib/libremosaic_daemon.so
 vendor/lib/liboptizoom.so
-vendor/lib/libubifocus.so
-vendor/lib/libtrueportrait.so
--vendor/lib/libts_face_beautify_hal.so
--vendor/lib/libts_face_beautify_jni.so
--vendor/lib/libts_detected_face_hal.so
--vendor/lib/libts_detected_face_jni.so
+vendor/lib/libqomx_core.so
+vendor/lib/libqomx_jpegdec.so
+vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libqomx_jpegenc.so
+vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libXMFD_AgeGender.so
- 
+-vendor/lib/libts_detected_face_hal.so
+-vendor/lib/libts_face_beautify_hal.so
+vendor/lib/libubifocus.so
+
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -160,7 +130,6 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
@@ -171,11 +140,11 @@ vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_ubifocus_lib.so
- 
+
 # Camera Actuators - from vince
 vendor/lib/libactuator_vince_dw9714v_ofilm.so
 vendor/lib/libactuator_vince_dw9763_sunny.so
- 
+
 # Camera Chromatix - from vince
 vendor/lib/libchromatix_ov12a10_sunny_vince_4k_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_4k_video_dw9763.so
@@ -186,7 +155,6 @@ vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_hfr_90.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_liveshot.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_preview.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_snapshot.so
-vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_snapshot_hht.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_video.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_cpp_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_default_preview_dw9763.so
@@ -203,7 +171,7 @@ vendor/lib/libchromatix_ov12a10_sunny_vince_snapshot.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_zsl_video_dw9763.so
- 
+
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_4k_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_4k_video_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_common.so
@@ -213,7 +181,6 @@ vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_hfr_90.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_liveshot.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_preview.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_snapshot.so
-vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_snapshot_hht.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_video.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_cpp_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_default_preview_dw9763.so
@@ -232,7 +199,7 @@ vendor/lib/libchromatix_ov12a10_sunny_vince_india_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_india_zsl_video_dw9763.so
 vendor/lib/libmmcamera_vince_ov12a10_sunny.so
 vendor/lib/libmmcamera_vince_ov12a10_sunny_eeprom.so
- 
+
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_90.so
@@ -254,7 +221,7 @@ vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_preview.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_snapshot.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_cpp_hfr_90.so
@@ -276,7 +243,7 @@ vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_preview.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_qtech_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_cpp_hfr_90.so
@@ -298,7 +265,7 @@ vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_preview.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_snapshot.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_ofilm_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_cpp_hfr_90.so
@@ -320,7 +287,7 @@ vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_preview.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_auto_vince_ov5675_qtech_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_cpp_hfr_90.so
@@ -342,8 +309,7 @@ vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_preview.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_snapshot.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_zsl_video_3a.so
-vendor/lib/libchromatix_soft_light_vince_ov5675_ofilm_cpp_snapshot_hht.so
- 
+
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_cpp_hfr_90.so
@@ -365,7 +331,7 @@ vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_preview.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_snapshot.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_ofilm_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_cpp_hfr_90.so
@@ -387,8 +353,7 @@ vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_preview.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_zsl_video_3a.so
-vendor/lib/libchromatix_soft_light_vince_ov5675_qtech_cpp_snapshot_hht.so
- 
+
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_cpp_hfr_90.so
@@ -410,7 +375,7 @@ vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_preview.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_soft_light_vince_india_ov5675_qtech_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_vince_india_imx486_ofilm_common.so
 vendor/lib/libchromatix_vince_india_imx486_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_vince_india_imx486_ofilm_cpp_hfr_60.so
@@ -433,7 +398,7 @@ vendor/lib/libchromatix_vince_india_imx486_ofilm_preview.so
 vendor/lib/libchromatix_vince_india_imx486_ofilm_snapshot.so
 vendor/lib/libchromatix_vince_india_imx486_ofilm_zsl_preview_dw9714v.so
 vendor/lib/libchromatix_vince_india_imx486_ofilm_zsl_video_dw9714v.so
- 
+
 vendor/lib/libchromatix_vince_imx486_ofilm_common.so
 vendor/lib/libchromatix_vince_imx486_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_vince_imx486_ofilm_cpp_hfr_60.so
@@ -458,7 +423,7 @@ vendor/lib/libchromatix_vince_imx486_ofilm_zsl_preview_dw9714v.so
 vendor/lib/libchromatix_vince_imx486_ofilm_zsl_video_dw9714v.so
 vendor/lib/libmmcamera_vince_imx486_ofilm.so
 vendor/lib/libmmcamera_vince_imx486_ofilm_eeprom.so
- 
+
 vendor/lib/libchromatix_vince_ov5675_ofilm_common.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_hfr_60.so
@@ -466,7 +431,6 @@ vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_hfr_90.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_liveshot.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_preview.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_snapshot.so
-vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_snapshot_hht.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_cpp_video.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_default_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_default_video.so
@@ -483,7 +447,7 @@ vendor/lib/libchromatix_vince_ov5675_ofilm_preview.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_snapshot.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_ofilm_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_common.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_cpp_hfr_60.so
@@ -510,7 +474,7 @@ vendor/lib/libchromatix_vince_india_ov5675_ofilm_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_india_ov5675_ofilm_zsl_video_3a.so
 vendor/lib/libmmcamera_vince_ov5675_ofilm.so
 vendor/lib/libmmcamera_vince_ov5675_ofilm_eeprom.so
- 
+
 vendor/lib/libchromatix_vince_ov5675_qtech_common.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_hfr_60.so
@@ -518,7 +482,6 @@ vendor/lib/libchromatix_vince_ov5675_qtech_cpp_hfr_90.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_liveshot.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_preview.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_snapshot.so
-vendor/lib/libchromatix_vince_ov5675_qtech_cpp_snapshot_hht.so
 vendor/lib/libchromatix_vince_ov5675_qtech_cpp_video.so
 vendor/lib/libchromatix_vince_ov5675_qtech_default_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_qtech_default_video.so
@@ -535,7 +498,7 @@ vendor/lib/libchromatix_vince_ov5675_qtech_preview.so
 vendor/lib/libchromatix_vince_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_video_3a.so
- 
+
 vendor/lib/libchromatix_vince_india_ov5675_qtech_common.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_cpp_hfr_60.so
@@ -562,21 +525,32 @@ vendor/lib/libchromatix_vince_india_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_india_ov5675_qtech_zsl_video_3a.so
 vendor/lib/libmmcamera_vince_ov5675_qtech.so
 vendor/lib/libmmcamera_vince_ov5675_qtech_eeprom.so
- 
-# Display calibration - from vince
--etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml
--etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml
--etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml
--etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml
- 
+
+# Camera HIDL - from vince (HACK NEEDED)
+vendor/bin/hw/android.hardware.camera.provider@2.4-service
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+
+# Consumer IR - from vince
+vendor/lib64/hw/consumerir.default.so
+
 # Fingerprint - from vince
-bin/goodixfingerprintd
-lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.fpc.so
-lib64/hw/gf_fingerprint.default.so:lib64/hw/fingerprint.goodix.so
-lib64/libgoodixfingerprintd_binder.so
-lib64/libgf_algo.so
-lib64/libgf_ca.so
-lib64/libgf_hal.so
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.so 
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.so 
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so 
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so 
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so 
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so 
+vendor/lib64/com.fingerprints.extension@1.0.so 
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+
+# Novatek NT36672 Firmware - from vince
+etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin
 
 # TAS Smart PA Firmware - from vince
-etc/firmware/tas2557_uCDSP.bin
+etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin
