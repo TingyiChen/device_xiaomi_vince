@@ -24,5 +24,7 @@ LOCAL_C_INCLUDES := \
 LOCAL_MODULE := libinit_vince
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := init_vince.cpp
+LOCAL_STATIC_LIBRARIES := \
+    libbase
 
 include $(BUILD_STATIC_LIBRARY)
