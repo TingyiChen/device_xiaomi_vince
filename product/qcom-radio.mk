@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     ril.ecclist=100,101,102,108,112 \
     ril.subscription.types=NV,RUIM \
-    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    rild.libpath=/vendor/lib64/libril-wrapper.so \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_network=22 \
     ro.use_data_netmgrd=true \
@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
     libxml2
+
+# RIL Wrapper
+PRODUCT_PACKAGES += \
+    libril-wrapper
 
 # Telephony
 PRODUCT_PACKAGES += \
