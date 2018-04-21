@@ -56,11 +56,11 @@
     <ctl name="COMP0 RX2" value="0" />
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="78" />
-    <ctl name="IIR1 INP1 Volume" value="84" />
-    <ctl name="IIR1 INP2 Volume" value="84" />
-    <ctl name="IIR1 INP3 Volume" value="84" />
-    <ctl name="IIR1 INP4 Volume" value="84" />
+    <ctl name="RX3 Digital Volume" value="84" />
+    <ctl name="IIR1 INP1 Volume" value="53" />
+    <ctl name="IIR1 INP2 Volume" value="53" />
+    <ctl name="IIR1 INP3 Volume" value="53" />
+    <ctl name="IIR1 INP4 Volume" value="53" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
@@ -84,7 +84,7 @@
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
     <ctl name="SPK" value="ZERO" />
-    <ctl name="LINE_OUT" value="ZERO" />
+    <ctl name="WSA Spk Switch" value="ZERO" />
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
     <ctl name="SpkrMono BOOST Switch" value="1" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
@@ -100,16 +100,9 @@
     <ctl name="DEC4 MUX" value="ZERO" />
     <ctl name="SpkrMono VISENSE Switch" value="0" />
 
-    <!--MAX98927 Smart PA-->
-    <ctl name="DRE EN" value="1" />
-    <ctl name="Left Channel Enable" value="0" />
-    <ctl name="Right Channel Enable" value="0" />
-    <ctl name="Boost Output Voltage" value="6.5V" />
-    <ctl name="Left Feedback Enable" value="ON" />
-    <ctl name="Right Feedback Enable" value="ON" />
-    <ctl name="Speaker Volume" value="1" />
-    <ctl name="Digital Gain" value="40" />
-    <!--MAX98927 Smart PA end-->
+    <!--tas2557 Smart PA-->
+    <ctl name="Calibration" value="255" />
+    <!--tas2557 Smart PA end-->
     
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
@@ -238,6 +231,7 @@
 
     <!-- EC_REF -->
     <ctl name="AUDIO_REF_EC_UL1 MUX" value="None" />
+    <ctl name="VOC_EXT_EC MUX" value="NONE" />
 
     <!-- IIR -->
     <ctl name="IIR1 Band1" id ="0" value="268435456" />
@@ -711,12 +705,6 @@
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
     </path>
 
-    <path name="voice-call quin_mi2s_rx">
-        <ctl name="VOC_EXT_EC MUX" value="QUIN_MI2S_TX" />
-        <ctl name="QUIN_MI2S_RX_Voice Mixer CSVoice" value="1" />
-        <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
-    </path>
-
     <path name="voice-call speaker">
         <ctl name="QUIN_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
@@ -818,7 +806,6 @@
     </path>
 
     <path name="voicemmode1-call speaker">
-        <ctl name="VOC_EXT_EC MUX" value="QUIN_MI2S_TX" />
         <ctl name="QUIN_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TERT_MI2S_TX_MMode1" value="1" />
     </path>
@@ -1030,7 +1017,6 @@
     <path name="incall_music_uplink2 usb-headphones">
         <path name="incall_music_uplink2" />
     </path>
-
     <path name="volte-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoLTE" value="1" />
         <ctl name="VoLTE_Tx Mixer TERT_MI2S_TX_VoLTE" value="1" />
@@ -1141,17 +1127,6 @@
     </path>
 
     <path name="speaker">
-        <!--
-        <ctl name="Boost Output Voltage" value="10V" />
-        <ctl name="Left Feedback Enable" value="ON" />
-        <ctl name="DRE EN" value="1" />
-        <ctl name="Ramp Switch" value="0" />
-        <ctl name="Amp DSP Enable" value="1" />
-        <ctl name="Amp Volume Location" value="0" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
-        <ctl name="Left Channel Enable" value="1" />
-        -->
     </path>
 
     <path name="speaker-and-hdmi">
@@ -1161,7 +1136,7 @@
 
     <path name="wsa-speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="78" />
+        <ctl name="RX3 Digital Volume" value="84" />
         <ctl name="LINE_OUT" value="Switch" />
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
    </path>
@@ -1217,7 +1192,7 @@
         <ctl name="COMP0 RX2" value="1" />
 	-->
         <ctl name="RDAC2 MUX" value="RX2" />
- 	<ctl name="RX1 Digital Volume" value="76" />
+        <ctl name="RX1 Digital Volume" value="76" />
    	<ctl name="RX2 Digital Volume" value="76" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
@@ -1248,12 +1223,10 @@
     </path>
 
     <path name="sidetone-headphones">
-        <!--
         <path name="sidetone-iir" />
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
         <ctl name="RX2 MIX2 INP1" value="IIR1" />
         <ctl name="IIR1 INP1 Volume" value="53" />
-        -->
     </path>
 
 
@@ -1273,8 +1246,12 @@
         <path name="speaker-mic" />
     </path>
 
+    <path name="voice-handset-mic">
+        <path name="handset-mic" />
+    </path>
+
     <path name="voice-headphones">
-      	<ctl name="MI2S_RX Channels" value="Two" />
+        <ctl name="MI2S_RX Channels" value="Two" />
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RX2 MIX1 INP1" value="RX2" />
         <ctl name="RX HPH Mode" value="HD2" />
@@ -1295,8 +1272,15 @@
 
     <path name="speaker-and-headphones">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <path name="headphones" />
+        <ctl name="MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RX HPH Mode" value="HD2" />
+        <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="RX1 Digital Volume" value="64" />
+        <ctl name="RX2 Digital Volume" value="64" />
+        <ctl name="HPHL" value="Switch" />
+        <ctl name="HPHR" value="Switch" />
     </path>
 
     <path name="wsa-speaker-and-headphones">
@@ -1370,6 +1354,7 @@
     </path>
 
     <path name="voice-speaker-dmic-ef">
+        <ctl name="VOC_EXT_EC MUX" value="QUIN_MI2S_TX" />
         <ctl name="MI2S_TX Channels" value="Two" />
 	<ctl name="ADC3 Volume" value="6" />
         <ctl name="DEC1 MUX" value="ADC2" />
@@ -1411,6 +1396,10 @@
     </path>
 
     <path name="echo-reference">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX" />
+    </path>
+
+    <path name="echo-reference ext_speaker">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="QUIN_MI2S_TX" />
     </path>
 
