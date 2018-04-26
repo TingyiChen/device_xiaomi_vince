@@ -9,7 +9,7 @@
 /data/misc/netmgr/log\.txt			u:object_r:netmgrd_data_file:s0
 
 # Double Tap to Wake
-/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture u:object_r:power_sysfs:s0
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input1/wake_gesture u:object_r:power_sysfs:s0
 
 # Fpc Fingerprint
 /sys/devices/soc/soc:fpc1020(/.*)?		u:object_r:fingerprint_sysfs:s0
