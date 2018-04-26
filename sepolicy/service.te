@@ -1,1 +1,1 @@
-type goodixfpd_service, service_manager_type;
+type fingerprint_service, service_manager_type;
