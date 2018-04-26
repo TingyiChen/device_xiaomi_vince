@@ -1,2 +1,2 @@
-type goodixfpd_device, dev_type;
+type fingerprint_device, dev_type;
 type peelir_device, dev_type;
