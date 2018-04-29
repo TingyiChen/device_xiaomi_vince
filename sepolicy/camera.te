@@ -1,0 +1,1 @@
+allow mm-qcamerad sysfs:file { read open };

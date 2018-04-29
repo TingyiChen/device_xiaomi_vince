@@ -1,2 +1,4 @@
 allow init fingerprint_device:chr_file { write ioctl };
 allow init sysfs_devices_system_cpu:dir write;
+
+allow init smd_device:chr_file { write ioctl };
