@@ -6,3 +6,9 @@ on boot
     # Peel IR
     chown system system /dev/peel_ir
     chmod 0660 /dev/peel_ir
+
+on property:wlan.driver.status=unloaded
+    insmod /vendor/prebuilt/modules/wlan.ko
+    setprop wlan.driver.status "ok"
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
