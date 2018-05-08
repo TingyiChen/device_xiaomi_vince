@@ -54,7 +54,12 @@ static void set(std::string path, int value) {
 }
 
 static void handleVinceBacklight(const LightState& state) {
+    /*
+     * Since Xiaomi implemented 4095 level brightness in panel dtsi
+     * while caf only have 255 level, we multiply 16 to brightness by default.
+    */
     uint32_t brightness = state.color & 0xFF;
+    brightness *= 16; // HACK
     set(LCD_LED BRIGHTNESS, brightness);
 }
 
