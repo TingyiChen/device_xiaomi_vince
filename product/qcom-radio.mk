@@ -30,6 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=1 \
     ril.ecclist=100,101,102,108,112 \
     ril.subscription.types=NV,RUIM \
     rild.libpath=/vendor/lib64/libril-wrapper.so \
