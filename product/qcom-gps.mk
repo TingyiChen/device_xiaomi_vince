@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     gps.msm8953 \
     libcurl \
-    libgnss
+    libgnss \
+    libgnsspps
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
