@@ -1,59 +1,53 @@
-<manifest version="1.0" type="framework">
-    <hal format="hidl">
+<compatibility-matrix version="1.0" type="device">
+    <hal format="hidl" optional="false">
         <name>android.frameworks.displayservice</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IDisplayService</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.frameworks.schedulerservice</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>ISchedulingPolicyService</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.frameworks.sensorservice</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>ISensorManager</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
         <version>2.1</version>
         <interface>
             <name>IComposer</name>
             <instance>vr</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IAllocator</name>
             <instance>ashmem</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.hidl.manager</name>
-        <transport>hwbinder</transport>
         <version>1.1</version>
         <interface>
             <name>IServiceManager</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.hidl.memory</name>
         <transport arch="32+64">passthrough</transport>
         <version>1.0</version>
@@ -62,36 +56,32 @@
             <instance>ashmem</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.hidl.token</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>ITokenManager</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.system.net.netd</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>INetd</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="false">
         <name>android.system.wifi.keystore</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IKeystore</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="native">
+    <hal format="native" optional="false">
         <name>netutils-wrapper</name>
-        <transport></transport>
         <version>1.0</version>
     </hal>
-</manifest>
+</compatibility-matrix>
