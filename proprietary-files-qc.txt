@@ -47,11 +47,27 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
+# ANT+ - from vince
+lib64/com.qualcomm.qti.ant@1.0.so
+-lib64/libantradio.so
+lib/com.qualcomm.qti.ant@1.0.so
+-lib/libantradio.so
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so
+
 # Bluetooth - from vince
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # CNE - from vince
 etc/cne/andsfCne.xml
@@ -145,6 +161,18 @@ vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
+
+# FM - from vince
+lib/libfm-hci.so
+lib/fm_helium.so
+lib64/libfm-hci.so
+lib64/fm_helium.so
+-lib/vendor.qti.hardware.fm@1.0.so
+-lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
 # Gatekeeper - from vince
 vendor/lib/hw/gatekeeper.msm8953.so
