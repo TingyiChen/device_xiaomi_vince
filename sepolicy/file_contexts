@@ -1,5 +1,8 @@
 # Biometric
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_vince u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_vince u:object_r:hal_fingerprint_vince_exec:s0
+
+# Bluetooth
+/(vendor|system/vendor)/bin/hci_qcomm_init      u:object_r:bluetooth_loader_exec:s0
 
 # Block devices
 /dev/block/bootdevice/by-name/persist		u:object_r:persist_block_device:s0
