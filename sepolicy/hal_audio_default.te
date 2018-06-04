@@ -1,1 +1,2 @@
 allow hal_audio_default persist_file:dir search;
+allow hal_audio_default sysfs:dir r_file_perms;
