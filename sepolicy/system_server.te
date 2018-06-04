@@ -1,1 +1,2 @@
 allow system_server peelir_device:chr_file rw_file_perms;
+allow system_server vendor_file:file r_file_perms;
