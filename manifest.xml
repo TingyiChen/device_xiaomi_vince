@@ -336,15 +336,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>com.qualcomm.qti.bluetooth_audio</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBluetoothAudio</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -369,19 +360,6 @@
         <interface>
             <name>IUceService</name>
             <instance>com.qualcomm.qti.uceservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>com.qualcomm.qti.wifidisplayhal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDSManager</name>
-            <instance>wifidisplaydshal</instance>
-        </interface>
-        <interface>
-            <name>IHDCPSession</name>
-            <instance>wifidisplayhdcphal</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -457,15 +435,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.esepowermanager</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IEsePowerManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.gnss</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -475,48 +444,12 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.alarm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAlarm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IFmHci</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.improvetouch.blobmanager</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBlobManager</name>
-            <instance>BlobManagerService</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.improvetouch.gesturemanager</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGestureManager</name>
-            <instance>GestureManagerService</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.improvetouch.touchcompanion</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchCompanion</name>
-            <instance>TouchCompanionService</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -655,33 +588,6 @@
         <version>1.0</version>
         <interface>
             <name>ITuiComm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wifi.keystore</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IKeystoreExt</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wigig.netperftuner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INetPerfTuner</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wigig.supptunnel</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISuppTunnelProvider</name>
             <instance>default</instance>
         </interface>
     </hal>
