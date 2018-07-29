@@ -3,7 +3,8 @@ allow hal_fingerprint_default { tee_device uhid_device }:chr_file { read write o
 allow hal_fingerprint_default fingerprint_data_file:file rw_file_perms;
 allow hal_fingerprint_default { fuse mnt_user_file storage_file }:dir search;
 allow hal_fingerprint_default { mnt_user_file storage_file }:lnk_file read;
-allow hal_fingerprint_default fingerprint_sysfs:{ dir file } rw_file_perms;
+allow hal_fingerprint_default fingerprint_sysfs:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprint_sysfs:file rw_file_perms;
 
 allow hal_fingerprint_default hal_fingerprint_default:netlink_socket { create bind write read };
 
