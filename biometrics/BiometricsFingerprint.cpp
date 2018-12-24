@@ -214,6 +214,11 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     return sInstance;
 }
 
+void setFpVendorProp(const char *fp_vendor) {
+    property_set("persist.sys.fp.vendor", fp_vendor);
+    property_set("ro.boot.fpsensor", fp_vendor);
+}
+
 fingerprint_device_t* getDeviceForVendor(const char *class_name)
 {
     const hw_module_t *hw_module = nullptr;
@@ -221,10 +226,13 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
 
     if (!strcmp(class_name, "fpc")) {
         err = load("/system/vendor/lib64/hw/fingerprint.fpc.so", &hw_module);
+        setFpVendorProp("fpc");
     } else if (!strcmp(class_name, "goodix")) {
         err = load("/system/vendor/lib64/hw/fingerprint.goodix.so", &hw_module);
+        setFpVendorProp("goodix");
     } else {
         ALOGE("No fingerprint module class specified.");
+        setFpVendorProp("none");
         err = 1;
     }
 

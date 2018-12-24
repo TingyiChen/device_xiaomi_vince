@@ -566,6 +566,12 @@ vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 
+# Mlipay - from vince
+etc/init/vendor.xiaomi.hardware.mlipay@1.0-service.rc:vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.0-service.rc
+lib64/vendor.xiaomi.hardware.mlipay@1.0.so:vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+vendor/bin/mlipayd
+vendor/lib64/libmlipay.so
+
 # Novatek NT36672 Firmware - from vince
 etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin
 
